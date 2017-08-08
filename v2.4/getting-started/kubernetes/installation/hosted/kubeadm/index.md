@@ -4,11 +4,11 @@ redirect_from: latest/getting-started/kubernetes/installation/hosted/kubeadm/ind
 ---
 
 This document outlines how to install Calico, as well as a as single node
-etcd cluster for use by Calico on a Kubernetes cluster created by kubeadm. 
-If you have already build your cluster with kubeadm, please review the 
+etcd cluster for use by Calico on a Kubernetes cluster created by kubeadm.
+If you have already build your cluster with kubeadm, please review the
 [Requirements / Limitations](#requirements--limitations) at the bottom of
 this page. It is likely you will need to recreate your cluster with the
-`--pod-network-cidr` and `--service-cidr` arguments to kubeadm. 
+`--pod-network-cidr` and `--service-cidr` arguments to kubeadm.
 
 Users who have deployed their own etcd cluster outside of kubeadm should
 use the [Calico only manifest](../hosted) instead, as it does not deploy its
@@ -63,7 +63,7 @@ $ kubectl get node <master_name> -o yaml
 ### Requirements / Limitations
 
 * This install does not configure etcd TLS
-* This install expects that one Kubernetes master node has been labeled 
+* This install expects that one Kubernetes master node has been labeled
   (this is usually setup by kubeadm, but `kubectl get node --show-labels` will expose the labels) with:
   * For Kubeadm 1.5 `kubeadm.alpha.kubernetes.io/role: master`
   * For Kubeadm 1.6 `node-role.kubernetes.io/master: ""`
