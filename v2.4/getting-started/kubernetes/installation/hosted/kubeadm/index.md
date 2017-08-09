@@ -5,7 +5,8 @@ redirect_from: latest/getting-started/kubernetes/installation/hosted/kubeadm/ind
 
 This document outlines how to install Calico, as well as a as single node
 etcd cluster for use by Calico on a Kubernetes cluster created by kubeadm.
-If you have already build your cluster with kubeadm, please review the
+
+If you have already built your cluster with kubeadm, please review the
 [Requirements / Limitations](#requirements--limitations) at the bottom of
 this page. It is likely you will need to recreate your cluster with the
 `--pod-network-cidr` and `--service-cidr` arguments to kubeadm.
